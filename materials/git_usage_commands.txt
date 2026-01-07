@@ -1,0 +1,73 @@
+
+
+git config --global user.name "Your Name"
+
+git config --global user.email "you@email.com"
+	-use gihubs no reply email. Go to github settings/emails a noreply mail will be displayed. copy is and place it in this command
+	
+git clone git@github.com:username/RVSOC.git
+
+cd RVSOC
+
+touch test.txt
+
+git add test.txt
+
+git commit -m "SSH test"
+
+git push
+
+
+
+typical flow :
+
+1. commits directly to main branch:
+git pull
+git status
+edit files
+git add .
+git commit -m "message"
+git push origin main
+
+
+
+
+2. using a branch:
+git pull
+
+git status
+
+git checkout -b branch_name #if a branch already exists use: git checkout branchname
+
+git branch
+
+#it should display main and branch names, the label with a * symbol is the current branch, all the commits will be tied to it
+
+git pull origin main #to pull all the stable changes and make the branch upto date
+
+git status
+
+#edit files
+
+git add .
+
+git commit -m "message"
+
+git push origin branch_name #all the changes are saved in branch
+
+to update the main branch:
+
+if still in the branch, u need to come out of it to commit to main branch
+
+git checkout main #enter main branch
+
+git branch #check is the pointer entered the main branch
+
+git pull #update the main before doing new commits
+
+git merge branch_name # merge the changes done in branch to the main branch
+
+git push origin main
+
+
+ 

@@ -1,0 +1,23 @@
+find the full path of a file:
+
+find / -type f -name "adder.v" 2>/dev/null
+
+or find ~ -name "adder.sv"
+
+find / -iname "filename.txt"
+
+
+find the full path of a folder:
+find / -type d -name "foldername" 2>/dev/null
+
+
+copy files:
+cp /source/path/filename.txt /destination/path/
+
+
+cp -r /source/path/foldername /destination/path/
+
+remove files or directory
+rm -r /path/to/foldername
+
+
